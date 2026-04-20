@@ -1,0 +1,33 @@
+{
+  "name": "@shreedhar/create-package",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "create-package": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsx ./src/cli/index.ts",
+    "prepack": "npm run build",
+    "start": "node ./dist/cli/index.js",
+    "test": "node --import tsx --test ./test/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.4.2",
+    "@shreedhar/create-package": "file:shreedhar-create-package-0.0.0.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
