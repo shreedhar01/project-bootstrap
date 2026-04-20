@@ -11,19 +11,21 @@ Confirm that the first feature works as a minimal interactive CLI slice.
 Steps:
 
 1. Run the package entry command locally.
-2. Confirm the terminal shows a project-type prompt.
+2. Confirm the terminal shows an interactive project-type selector.
 
 Expected Result:
 
 - The CLI starts without crashing.
 - The selection options are visible.
+- One option is visibly active by default.
 
 ### Scenario 2: Frontend selection
 
 Steps:
 
 1. Start the CLI.
-2. Select `frontend`.
+2. Move to `frontend` if needed with arrow keys.
+3. Press Enter.
 
 Expected Result:
 
@@ -35,7 +37,8 @@ Expected Result:
 Steps:
 
 1. Start the CLI.
-2. Select `backend`.
+2. Move to `backend` with arrow keys.
+3. Press Enter.
 
 Expected Result:
 
@@ -47,7 +50,8 @@ Expected Result:
 Steps:
 
 1. Start the CLI.
-2. Select `fullstack`.
+2. Move to `fullstack` with arrow keys.
+3. Press Enter.
 
 Expected Result:
 
@@ -57,7 +61,9 @@ Expected Result:
 ## Validation Checklist
 
 - CLI entrypoint is runnable
-- Prompt appears correctly
+- Interactive selector appears correctly
+- Arrow-key navigation works
+- Enter confirms the active selection
 - All three options are selectable
 - Output matches the selected project type
 - No file generation occurs in this feature

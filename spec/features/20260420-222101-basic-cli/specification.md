@@ -11,7 +11,7 @@ Create the first working slice of the package CLI.
 The CLI should:
 
 - Start successfully
-- Show a basic project-type selection
+- Show an interactive terminal project-type selector
 - Offer these choices:
   - Frontend
   - Backend
@@ -27,7 +27,7 @@ As a developer, I want to run the package and choose what kind of project I want
 ## In Scope
 
 - CLI entrypoint bootstraps correctly
-- Interactive selection for project type
+- Interactive arrow-key selection for project type
 - Support for three options:
   - Frontend
   - Backend
@@ -47,21 +47,27 @@ As a developer, I want to run the package and choose what kind of project I want
 ## Functional Requirements
 
 1. The package must expose a runnable CLI entrypoint.
-2. Running the CLI must present the user with project-type choices.
+2. Running the CLI must present the user with an interactive selector for project-type choices.
 3. The available choices must be `frontend`, `backend`, and `fullstack`.
-4. After the user selects `frontend`, the CLI must print `hello world, from frontend`.
-5. After the user selects `backend`, the CLI must print `hello world, from backend`.
-6. After the user selects `fullstack`, the CLI must print `hello world, from full-stack`.
-7. The command must exit successfully after printing the message.
+4. The selector must support keyboard navigation with the up and down arrow keys.
+5. The selector must confirm the current choice when the user presses Enter.
+6. The currently active option must be visually distinguishable from the others.
+7. After the user selects `frontend`, the CLI must print `hello world, from frontend`.
+8. After the user selects `backend`, the CLI must print `hello world, from backend`.
+9. After the user selects `fullstack`, the CLI must print `hello world, from full-stack`.
+10. The command must exit successfully after printing the message.
 
 ## Behavioral Notes
 
 - The selected option is used only to validate the interaction flow and branching.
 - The message format should be fixed and predictable for all three options.
+- The prompt should feel similar to modern scaffolding CLIs such as Vite or Next.js starters.
 
 ## Acceptance Criteria
 
-- When the CLI starts, the user sees a selection prompt.
+- When the CLI starts, the user sees an interactive selector prompt.
+- The user can move between options using arrow keys.
+- The active option is highlighted.
 - When the user picks `frontend`, the CLI prints `hello world, from frontend`.
 - When the user picks `backend`, the CLI prints `hello world, from backend`.
 - When the user picks `fullstack`, the CLI prints `hello world, from full-stack`.
