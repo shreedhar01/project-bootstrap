@@ -11,9 +11,6 @@ importers:
       '@inquirer/prompts':
         specifier: ^8.4.2
         version: 8.4.2(@types/node@25.6.0)
-      '@shreedhar/create-package':
-        specifier: file:shreedhar-create-package-0.0.0.tgz
-        version: file:shreedhar-create-package-0.0.0.tgz(@types/node@25.6.0)
     devDependencies:
       '@types/node':
         specifier: ^25.6.0
@@ -317,12 +314,6 @@ packages:
       '@types/node':
         optional: true
 
-  '@shreedhar/create-package@file:shreedhar-create-package-0.0.0.tgz':
-    resolution: {integrity: sha512-k2mcZJAII+gftWBcgi1rVttoYQzbbjrubSXKFtVaxXNtlPxkl51KucYEEA5aFtGdBn7B33rlNGGPfgDSKudw9Q==, tarball: file:shreedhar-create-package-0.0.0.tgz}
-    version: 0.0.0
-    engines: {node: '>=18'}
-    hasBin: true
-
   '@types/node@25.6.0':
     resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
 
@@ -584,12 +575,6 @@ snapshots:
   '@inquirer/type@4.0.5(@types/node@25.6.0)':
     optionalDependencies:
       '@types/node': 25.6.0
-
-  '@shreedhar/create-package@file:shreedhar-create-package-0.0.0.tgz(@types/node@25.6.0)':
-    dependencies:
-      '@inquirer/prompts': 8.4.2(@types/node@25.6.0)
-    transitivePeerDependencies:
-      - '@types/node'
 
   '@types/node@25.6.0':
     dependencies:

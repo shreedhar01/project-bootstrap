@@ -10,17 +10,17 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "type-check": "tsc --project tests/tsconfig.json",
     "dev": "tsx ./src/cli/index.ts",
     "prepack": "npm run build",
     "start": "node ./dist/cli/index.js",
-    "test": "node --import tsx --test ./test/**/*.test.ts"
+    "test": "node --import tsx --test ./tests/**/*.test.ts"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "@inquirer/prompts": "^8.4.2",
-    "@shreedhar/create-package": "file:shreedhar-create-package-0.0.0.tgz"
+    "@inquirer/prompts": "^8.4.2"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
