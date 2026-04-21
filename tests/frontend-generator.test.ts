@@ -6,8 +6,8 @@ import test from "node:test";
 
 import {
   generateFrontendProject,
-  normalizeProjectName,
 } from "../src/core/generate-frontend.js";
+import { normalizeProjectName } from "../src/core/utils.js";
 
 test("normalizes project names for filesystem and package usage", () => {
   assert.equal(normalizeProjectName("Frontend App"), "frontend-app");

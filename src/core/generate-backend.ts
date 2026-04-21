@@ -3,13 +3,13 @@ import path from "node:path";
 
 import { input } from "@inquirer/prompts";
 
-import { createFrontendTemplate } from "../templates/frontend.js";
+import { createBackendTemplate } from "../templates/backend.js";
 import { assertTargetDirectoryIsEmpty, normalizeProjectName } from "./utils.js";
 
-export async function promptForProjectName(): Promise<string> {
+export async function promptForBackendProjectName(): Promise<string> {
   const projectName = await input({
-    message: "What should the frontend project be named? (use '.' for current directory)",
-    default: "frontend-app",
+    message: "What should the backend project be named? (use '.' for current directory)",
+    default: "backend-app",
     validate(value) {
       const normalized = normalizeProjectName(value);
 
@@ -24,7 +24,7 @@ export async function promptForProjectName(): Promise<string> {
   return normalizeProjectName(projectName);
 }
 
-export async function generateFrontendProject(
+export async function generateBackendProject(
   currentWorkingDirectory: string,
   projectName: string,
 ): Promise<string> {
@@ -43,7 +43,7 @@ export async function generateFrontendProject(
     await mkdir(targetDirectory, { recursive: true });
   }
 
-  const templateFiles = createFrontendTemplate(displayProjectName);
+  const templateFiles = createBackendTemplate(displayProjectName);
 
   for (const file of templateFiles) {
     const filePath = path.join(targetDirectory, file.path);

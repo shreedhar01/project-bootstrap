@@ -3,6 +3,7 @@
 import path from "node:path";
 
 import { generateFrontendProject, promptForProjectName } from "../core/generate-frontend.js";
+import { generateBackendProject, promptForBackendProjectName } from "../core/generate-backend.js";
 import { selectProjectType } from "../core/select-project-type.js";
 
 async function main(): Promise<void> {
@@ -16,6 +17,19 @@ async function main(): Promise<void> {
     console.log("Next steps:");
     console.log(`  cd ${projectName}`);
     console.log("  npm install");
+    console.log("  npm run dev");
+    return;
+  }
+
+  if (projectType.key === "backend") {
+    const projectName = await promptForBackendProjectName();
+    const targetDirectory = await generateBackendProject(process.cwd(), projectName);
+
+    console.log(`Created backend project in ${path.relative(process.cwd(), targetDirectory) || "."}`);
+    console.log("Next steps:");
+    console.log(`  cd ${projectName}`);
+    console.log("  npm install");
+    console.log("  cp .env.example .env");
     console.log("  npm run dev");
     return;
   }
