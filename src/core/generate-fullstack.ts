@@ -69,6 +69,8 @@ volumes:
 
   // Add root .gitignore
   const gitignoreContent = `node_modules
+frontend/node_modules
+backend/node_modules
 .env
 dist
 build

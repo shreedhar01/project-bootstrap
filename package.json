@@ -13,6 +13,7 @@
     "type-check": "tsc --project tests/tsconfig.json",
     "dev": "tsx ./src/cli/index.ts",
     "prepack": "npm run build",
+    "prepare": "husky",
     "start": "node ./dist/cli/index.js",
     "test": "node --import tsx --test ./tests/**/*.test.ts"
   },
@@ -23,7 +24,15 @@
     "@inquirer/prompts": "^8.4.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
     "@types/node": "^25.6.0",
+    "husky": "^9.1.7",
+    "semantic-release": "^25.0.3",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3"
   },
