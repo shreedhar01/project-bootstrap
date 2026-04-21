@@ -29,9 +29,9 @@ The `fullstack` feature will be validated using automated unit tests and manual 
 
 ## Acceptance Criteria Check
 
-- [ ] Does `fullstack` selection create both `frontend/` and `backend/` folders?
-- [ ] Are both `frontend` and `backend` starters correctly generated into their respective directories?
-- [ ] Is `docker-compose.db.yaml` present at the root?
-- [ ] Is a root-level `.gitignore` created?
-- [ ] Are both projects independent (separate `package.json`)?
-- [ ] Can both projects be built and started separately?
+- [x] Does `fullstack` selection create both `frontend/` and `backend/` folders?
+- [x] Are both `frontend` and `backend` starters correctly generated into their respective directories?
+- [x] Is `docker-compose.db.yaml` present at the root?
+- [x] Is a root-level `.gitignore` created?
+- [x] Are both projects independent (separate `package.json`)?
+- [x] Can both projects be built and started separately?
