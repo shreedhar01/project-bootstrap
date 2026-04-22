@@ -7,7 +7,7 @@ Build an npm-create package that helps users bootstrap a new project through a g
 The intended usage pattern is:
 
 ```bash
-pnpm create @shreedhar/package
+npm create @shreedhar01/bootstrap
 ```
 
 The package should ask the user what they want to create and initialize a suitable project structure based on the selection:

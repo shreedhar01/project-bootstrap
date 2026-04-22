@@ -1,7 +1,7 @@
 # Specification: Package Release Automation
 
 ## Goal
-Automate the versioning, changelog generation, and publishing process for the `@shreedhar/package` using industry-standard tools to ensure consistency and reliability.
+Automate the versioning, changelog generation, and publishing process for the `@shreedhar01/create-bootstrap` using industry-standard tools to ensure consistency and reliability.
 
 ## Requirements
 

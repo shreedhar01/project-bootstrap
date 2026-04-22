@@ -1,13 +1,13 @@
 {
-  "name": "@shreedhar01/bootstrap",
+  "name": "@shreedhar01/create-bootstrap",
   "version": "1.0.0",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shreedhar01/project-bootstrap.git"
+    "url": "git+https://github.com/shreedhar01/project-bootstrap.git"
   },
   "bin": {
-    "create-package": "./dist/cli/index.js"
+    "create-bootstrap": "dist/cli/index.js"
   },
   "files": [
     "dist"
