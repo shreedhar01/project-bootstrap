@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/shreedhar01/project-bootstrap/compare/v1.0.0...v1.0.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* npm trusted verification ([615b461](https://github.com/shreedhar01/project-bootstrap/commit/615b461e60a2d0459e3a960c291e3d8018214421))
+* space ([a121115](https://github.com/shreedhar01/project-bootstrap/commit/a1211155a9a2366e4f0cc3443d826ea79d821658))
+* syntx error in yml ([4b773c8](https://github.com/shreedhar01/project-bootstrap/commit/4b773c83b5f8d6e71eeeccb63811a75393ad8266))
+
 # 1.0.0 (2026-04-21)
 
 
