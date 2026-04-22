@@ -70,7 +70,3 @@ pnpm start
 ```bash
 pnpm test
 ```
-
-## 📜 License
-
-[MIT](LICENSE) (or specify your license)
